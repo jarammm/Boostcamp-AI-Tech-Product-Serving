@@ -123,3 +123,21 @@ async def get_bill(order_id: UUID):
     if not found_order:
         return {"message": "주문 정보를 찾을 수 없습니다"}
     return found_order.bill
+
+"""
+TODO: 주문 구현, 상품 구현, 결제 구현
+    TODO: 주문(Order) = Request
+    TODO: 상품(Product) = 마스크 분류 모델 결과
+    TODO: 결과 = Order.bill
+    # 2개의 컴포넌트
+TODO: Order, Product Class 구현
+    TODO: Order의 products 필드로 Product의 List(하나의 주문에 여러 제품이 있을 수 있음음
+
+TODO: get_orders(GET) : 모든 Order를 가져옴
+TODO: get_order(GET) : order_id를 사용해 Order를 가져옴
+TODO: get_order_by_id : get_order에서 사용할 함수
+TODO: make_order(POST) : model, config를 가져온 후 predict => Order products에 넣고 return
+TODO: update_order(PATCH) : order_id를 사용해 order를 가져온 후, update
+TODO: update_order_by_id : update_order에서 사용할 함수
+TODO: get_bill(GET) : order_id를 사용해 order를 가져온 후, order.bill return
+"""
