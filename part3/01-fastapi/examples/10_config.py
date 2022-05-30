@@ -112,3 +112,15 @@ assert prod_config_with_pydantic.dict() != expected
 
 # cleanup
 os.remove("dev_config.yaml")
+
+"""
+참고> Field value priority🔗
+In the case where a value is specified for the same Settings field in multiple ways,
+the selected value is determined as follows (in descending order of priority):
+
+1. Arguments passed to the Settings class initialiser.
+2. Environment variables (e.g. my_prefix_special_function -> export my_prefix_special_function='foo.bar')
+3. Variables loaded from a dotenv (.env) file.
+4. Variables loaded from the secrets directory.
+5. The default field values for the Settings model.
+"""
