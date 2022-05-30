@@ -1,9 +1,9 @@
+from pydoc import describe
 from typing import Optional
 from fastapi import FastAPI
 import uvicorn
 
 from pydantic import BaseModel
-
 
 class Item(BaseModel):
     name: str
@@ -21,4 +21,5 @@ def create_item(item: Item):
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    # uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=30002)
