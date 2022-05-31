@@ -34,7 +34,7 @@ def main():
             ('files', (uploaded_file.name, image_bytes,
                        uploaded_file.type))
         ]
-        response = requests.post("http://localhost:8001/order", files=files)
+        response = requests.post("http://101.101.208.118:30002/order", files=files)
         label = response.json()["products"][0]["result"]
         st.write(f'label is {label}')
 
