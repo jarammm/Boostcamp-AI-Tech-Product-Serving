@@ -4,7 +4,7 @@
 
 > Serving Text2Image Model by FastAPI
 
-```
- used model : minDALL-E (kakaobrain)
- repository : https://github.com/kakaobrain/minDALL-E.git
-```
+<br/>
+
+ - model : minDALL-E (kakaobrain)<br/>
+ - repository : [kakaobrain/minDALL-E](https://github.com/kakaobrain/minDALL-E.git)
