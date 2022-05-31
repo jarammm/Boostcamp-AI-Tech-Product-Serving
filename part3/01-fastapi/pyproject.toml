@@ -19,6 +19,7 @@ gunicorn = "^20.1.0"
 streamlit = "^1.2.0"
 opencv-python-headless = "4.5.1.48"
 pandas = "1.0.0"
+clip = "^0.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
